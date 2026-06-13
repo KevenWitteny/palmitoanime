@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palmito Anime | Player</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header fixed">
+    <a class="logo" href="index.html">Palmito<span>Anime</span></a>
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a href="catalogo.html">Catálogo</a>
+    </nav>
+  </header>
+
+  <main class="watch-page">
+    <a id="backToAnime" class="back-link" href="catalogo.html">← Voltar</a>
+
+    <section class="watch-card">
+      <div>
+        <p class="eyebrow">Assistindo</p>
+        <h1 id="watchTitle">Anime</h1>
+        <p id="watchDescription"></p>
+      </div>
+
+      <video id="videoPlayer" controls poster="">
+        <source id="videoSource" src="" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+
+      <p class="video-note">
+        Coloque seus arquivos `.mp4` na pasta <strong>assets/videos/</strong> usando o nome indicado no README.
+      </p>
+    </section>
+  </main>
+
+  <script src="js/anime-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

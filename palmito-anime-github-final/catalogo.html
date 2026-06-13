@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palmito Anime | Catálogo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header fixed">
+    <a class="logo" href="index.html">Palmito<span>Anime</span></a>
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a class="active" href="catalogo.html">Catálogo</a>
+      <a href="detalhes.html?id=fullmetal-alchemist">Destaque</a>
+    </nav>
+  </header>
+
+  <main class="catalog-page">
+    <section class="catalog-hero">
+      <div>
+        <p class="eyebrow">Lista de animes</p>
+        <h1>Catálogo</h1>
+        <p>Pesquise por nome, gênero ou ano.</p>
+      </div>
+
+      <form class="search-box" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Buscar anime...">
+        <button type="submit">Pesquisar</button>
+      </form>
+    </section>
+
+    <section id="animeGrid" class="anime-grid"></section>
+    <p id="emptyState" class="empty-state" hidden>Nenhum anime encontrado.</p>
+  </main>
+
+  <script src="js/anime-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
